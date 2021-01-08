@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 public class ProductService {
 
     @Autowired
-    ProductRepository repository;
+    private ProductRepository repository;
 
     @Transactional(readOnly = true)
     public List<ProductDTO> findAll(){
